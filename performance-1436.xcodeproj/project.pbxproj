@@ -99,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				126A4B6A26F910530056B74A /* DocumentStore.swift */,
+				126A4B6826F90D3A0056B74A /* DispatchGroupViewController.swift */,
 				126A4B6426F8FCEF0056B74A /* GCDViewController.swift */,
 				126A4B6626F9064E0056B74A /* FiltersOnBackgroundViewController.swift */,
-				126A4B6826F90D3A0056B74A /* DispatchGroupViewController.swift */,
 			);
 			path = "lesson-2";
 			sourceTree = "<group>";

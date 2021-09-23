@@ -20,12 +20,36 @@ class DispatchGroupViewController: UIViewController {
 
     var documents: [Document] = []
     
+    let documentStore = DocumentStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //test1()
 
-        test2()
+        //test2()
+        
+        test3()
+    }
+    
+    func test3() {
+        
+        
+        let firstChar = UnicodeScalar("А").value
+        let lastChar = UnicodeScalar("Я").value
+        
+        let dispatchGroup = DispatchGroup()
+               
+        for charCode in firstChar...lastChar {
+            DispatchQueue.global().async(group: dispatchGroup, flags: .barrier) {
+                let docName = String(UnicodeScalar(charCode)!)
+                self.documentStore.createDocument(fromName: docName)
+            }
+        }
+                
+        dispatchGroup.notify(queue: DispatchQueue.main) {
+             print(self.documentStore)
+        }
     }
     
     func test2() {

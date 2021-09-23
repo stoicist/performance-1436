@@ -12,15 +12,15 @@ class DocumentStore: CustomStringConvertible {
     private var documents = [Document]()
     private let syncQueue = DispatchQueue(label: "DocumentStoreSyncQueue", attributes: .concurrent)
     
-//    // task 4
-//    func createDocument(fromName name: String) {
-//            syncQueue.async(flags: .barrier) {
-//                let lastId = self.documents.last?.id ?? 0
-//                let newId = lastId + 1
-//                let doc = Document(id: newId, name: name)
-//                self.documents.append(doc)
-//            }
-//    }
+    // task 4
+    func createDocument(fromName name: String) {
+            syncQueue.async(flags: .barrier) {
+                let lastId = self.documents.last?.id ?? 0
+                let newId = lastId + 1
+                let doc = Document(id: newId, name: name)
+                self.documents.append(doc)
+            }
+    }
     
     func getDocument(byId id: Int) -> Document? {
         

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,14 @@
 		126A4B6726F9064E0056B74A /* FiltersOnBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4B6626F9064E0056B74A /* FiltersOnBackgroundViewController.swift */; };
 		126A4B6926F90D3A0056B74A /* DispatchGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4B6826F90D3A0056B74A /* DispatchGroupViewController.swift */; };
 		126A4B6B26F910530056B74A /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4B6A26F910530056B74A /* DocumentStore.swift */; };
+		12AAAE2C27023FE9001B476F /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE2B27023FE9001B476F /* TasksViewController.swift */; };
+		12AAAE76270B6F2A001B476F /* PromisePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE75270B6F29001B476F /* PromisePatternViewController.swift */; };
+		12AAAE78270B6F4A001B476F /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE77270B6F4A001B476F /* Promise.swift */; };
+		12AAAE7B270B753B001B476F /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 12AAAE7A270B753B001B476F /* PromiseKit */; };
+		12AAAE7E270B757B001B476F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 12AAAE7D270B757B001B476F /* Alamofire */; };
+		12AAAE80270B7680001B476F /* PromiseKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE7F270B7680001B476F /* PromiseKitViewController.swift */; };
+		12AAAE82270B7942001B476F /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE81270B7942001B476F /* PostService.swift */; };
+		12AAAE84270B797C001B476F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAAE83270B797C001B476F /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +44,12 @@
 		126A4B6626F9064E0056B74A /* FiltersOnBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersOnBackgroundViewController.swift; sourceTree = "<group>"; };
 		126A4B6826F90D3A0056B74A /* DispatchGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupViewController.swift; sourceTree = "<group>"; };
 		126A4B6A26F910530056B74A /* DocumentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStore.swift; sourceTree = "<group>"; };
+		12AAAE2B27023FE9001B476F /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		12AAAE75270B6F29001B476F /* PromisePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisePatternViewController.swift; sourceTree = "<group>"; };
+		12AAAE77270B6F4A001B476F /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		12AAAE7F270B7680001B476F /* PromiseKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitViewController.swift; sourceTree = "<group>"; };
+		12AAAE81270B7942001B476F /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		12AAAE83270B797C001B476F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AAAE7B270B753B001B476F /* PromiseKit in Frameworks */,
+				12AAAE7E270B757B001B476F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,8 @@
 			children = (
 				126A4B3F26F3B8B50056B74A /* AppDelegate.swift */,
 				126A4B4126F3B8B50056B74A /* SceneDelegate.swift */,
+				12AAAE74270B6EC5001B476F /* lesson-5 */,
+				12AAAE2A27023FC6001B476F /* lesson-4 */,
 				1220801226FCF09A00E47344 /* lesson-3 */,
 				126A4B5B26F8DEF30056B74A /* lesson-2 */,
 				126A4B5726F3B8E60056B74A /* lesson-1 */,
@@ -117,6 +135,26 @@
 			path = "lesson-2";
 			sourceTree = "<group>";
 		};
+		12AAAE2A27023FC6001B476F /* lesson-4 */ = {
+			isa = PBXGroup;
+			children = (
+				12AAAE2B27023FE9001B476F /* TasksViewController.swift */,
+			);
+			path = "lesson-4";
+			sourceTree = "<group>";
+		};
+		12AAAE74270B6EC5001B476F /* lesson-5 */ = {
+			isa = PBXGroup;
+			children = (
+				12AAAE75270B6F29001B476F /* PromisePatternViewController.swift */,
+				12AAAE77270B6F4A001B476F /* Promise.swift */,
+				12AAAE7F270B7680001B476F /* PromiseKitViewController.swift */,
+				12AAAE81270B7942001B476F /* PostService.swift */,
+				12AAAE83270B797C001B476F /* Post.swift */,
+			);
+			path = "lesson-5";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +171,10 @@
 			dependencies = (
 			);
 			name = "performance-1436";
+			packageProductDependencies = (
+				12AAAE7A270B753B001B476F /* PromiseKit */,
+				12AAAE7D270B757B001B476F /* Alamofire */,
+			);
 			productName = "performance-1436";
 			productReference = 126A4B3C26F3B8B50056B74A /* performance-1436.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +202,10 @@
 				Base,
 			);
 			mainGroup = 126A4B3326F3B8B50056B74A;
+			packageReferences = (
+				12AAAE79270B753B001B476F /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				12AAAE7C270B757B001B476F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 126A4B3D26F3B8B50056B74A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,9 +239,15 @@
 				126A4B4426F3B8B50056B74A /* ViewController.swift in Sources */,
 				126A4B6726F9064E0056B74A /* FiltersOnBackgroundViewController.swift in Sources */,
 				1220801426FCF0B400E47344 /* OperationQueueViewController.swift in Sources */,
+				12AAAE80270B7680001B476F /* PromiseKitViewController.swift in Sources */,
+				12AAAE76270B6F2A001B476F /* PromisePatternViewController.swift in Sources */,
 				126A4B4026F3B8B50056B74A /* AppDelegate.swift in Sources */,
+				12AAAE84270B797C001B476F /* Post.swift in Sources */,
+				12AAAE82270B7942001B476F /* PostService.swift in Sources */,
+				12AAAE2C27023FE9001B476F /* TasksViewController.swift in Sources */,
 				126A4B6926F90D3A0056B74A /* DispatchGroupViewController.swift in Sources */,
 				126A4B4226F3B8B50056B74A /* SceneDelegate.swift in Sources */,
+				12AAAE78270B6F4A001B476F /* Promise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +449,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12AAAE79270B753B001B476F /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.16.0;
+			};
+		};
+		12AAAE7C270B757B001B476F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12AAAE7A270B753B001B476F /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12AAAE79270B753B001B476F /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		12AAAE7D270B757B001B476F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12AAAE7C270B757B001B476F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		126A4B4826F3B8B50056B74A /* performance_1436.xcdatamodeld */ = {
